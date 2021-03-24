@@ -28,16 +28,16 @@
             -  출제되는 문제 수는 최대 문제 100 까지 허용
         
 **빈칸 채우기 문제**
-    
-    ![1](https://user-images.githubusercontent.com/47939832/112276375-0167f180-8cc4-11eb-996f-96702784a027.png)
-    
-    ![2](https://user-images.githubusercontent.com/47939832/112276377-02991e80-8cc4-11eb-993b-58f5ec31b54c.png)
+
+![1](https://user-images.githubusercontent.com/47939832/112276375-0167f180-8cc4-11eb-996f-96702784a027.png)
+
+![2](https://user-images.githubusercontent.com/47939832/112276377-02991e80-8cc4-11eb-993b-58f5ec31b54c.png)
     
 **프로그램 문제**
-    
-    ![3](https://user-images.githubusercontent.com/47939832/112276378-02991e80-8cc4-11eb-8e59-a9f9b2c8d98c.png)
-    
-    ![4](https://user-images.githubusercontent.com/47939832/112276379-0331b500-8cc4-11eb-890e-5d6527f297e7.png)
+ 
+ ![3](https://user-images.githubusercontent.com/47939832/112276378-02991e80-8cc4-11eb-8e59-a9f9b2c8d98c.png)
+ 
+ ![4](https://user-images.githubusercontent.com/47939832/112276379-0331b500-8cc4-11eb-890e-5d6527f297e7.png)
     
 **빈칸 문제 채점 방법**
     
@@ -47,15 +47,15 @@
     - 포인터 배열 캐, 스팅 연산처럼 다수의 답이 정답이 될 경우 정답파일에 ‘콜론(:)’으로 구분하며, 학생
 들이 작성한 답안 파일을 비교할 때 다수의 답을 모두 정답으로 채점 정답 파일에 새로 -> 운 답을 
 추가 및 삭제를 통해 학생들의 답안을 채점
-    
-    ![5](https://user-images.githubusercontent.com/47939832/112276908-8eab4600-8cc4-11eb-9bb1-004dfd87d5c8.png)
+
+   ![5](https://user-images.githubusercontent.com/47939832/112276908-8eab4600-8cc4-11eb-9bb1-004dfd87d5c8.png)
     
     - 연산자 사용으로 인해 다수의 답이 정답이 되는 경우 자동으로 동일한 연산식으로 자동으로 채점
     - 단, 피연산자들의 순서가 바뀌었을 때 결과 값이 달라지는 문제는 지원하지 않음
     - 연산자 우선순위를 기반으로 한 괄호도 정답으로 처리
     - 문자열 간 공백은 구분하지 않음 컴파일 시 에러가 나지 않는 경우 공 -> 백은 정답 처리
     
-    ![6](https://user-images.githubusercontent.com/47939832/112276911-8f43dc80-8cc4-11eb-8ed1-f53b0af87c33.png)
+   ![6](https://user-images.githubusercontent.com/47939832/112276911-8f43dc80-8cc4-11eb-8ed1-f53b0af87c33.png)
     
 **프로그램 문제 채점 방법**
     
@@ -81,7 +81,7 @@
     - 점수 테이블 파일은 이름으로 생성해야 하 “./score_table.csv” , 며 문제번호와 점수를 저장
     - 점수 테이블 파일이 현“ ” 재 실행 위치 에 존재해야 하며 존재 , 하지 않은 경우 이름으로 점수 테이블 파일을 새로 생성하고, 사용자가 문제번호와 점수를 설정하고 이를 저장할 수 있어야 함
     
-    ![7](https://user-images.githubusercontent.com/47939832/112277579-417ba400-8cc5-11eb-903f-7385a40494cf.png)
+   ![7](https://user-images.githubusercontent.com/47939832/112277579-417ba400-8cc5-11eb-903f-7385a40494cf.png)
     
     
 **채점 결과 테이블 생성**
@@ -90,15 +90,38 @@
 하며, (1) (2) (3) 학번 문제번호당 채점 점수 총점을 저장하여 전체 학생들의 각 문제당 점수와 전
 체 점수를 알 수 있음
 
-    ![8](https://user-images.githubusercontent.com/47939832/112277581-42143a80-8cc5-11eb-93c4-59f1ec297af1.png)
+   ![8](https://user-images.githubusercontent.com/47939832/112277581-42143a80-8cc5-11eb-93c4-59f1ec297af1.png)
     
     
 **옵션**
     
     - 옵션 없이 실행하는 경우
-        
-        ![9](https://user-images.githubusercontent.com/47939832/112277583-42acd100-8cc5-11eb-91ad-f2bcd0cd1920.png)
     
+   ![9](https://user-images.githubusercontent.com/47939832/112277583-42acd100-8cc5-11eb-91ad-f2bcd0cd1920.png)
+    
+    - -m : 옵션 채점 전에 원하는 문제의 점수를 수정
+    
+   ![10](https://user-images.githubusercontent.com/47939832/112277584-42acd100-8cc5-11eb-9ca8-df0b2e73f0f2.png)
+    
+    - -e [DIRNAME] : DIRNAME/ / _error.txt 옵션 학번 문제번호 에 에러 메시지가 출력
+    
+   ![11](https://user-images.githubusercontent.com/47939832/112277590-43456780-8cc5-11eb-8de8-b4fd506392e1.png)
+   
+    - -t [QNAMES] : QNAME lpthread 옵션 을 문제 번호로 하는 문제는 컴파일 시 – 옵션 추가
+    
+   ![12](https://user-images.githubusercontent.com/47939832/112277593-43ddfe00-8cc5-11eb-8067-f92f5ec3efda.png)
+   
+   ![13](https://user-images.githubusercontent.com/47939832/112277597-43ddfe00-8cc5-11eb-909a-700c37a742ec.png)
+   
+    - -i [STUDENTIDS] : => 옵션 채점결과 파일이 있는 경우 해당 학생들의 틀린 문제 파일 출력 
+<STUDENTDIR> <TRUESETDIR>가 없어도 사용 가능
+   
+   ![14](https://user-images.githubusercontent.com/47939832/112277598-44769480-8cc5-11eb-8106-11e55456f8ce.png)
+   
+    - -h : 옵션 사용법 출력
+    
+   ![15](https://user-images.githubusercontent.com/47939832/112277603-44769480-8cc5-11eb-9547-162b6e46b860.png)
+
     
 **기타**
     
